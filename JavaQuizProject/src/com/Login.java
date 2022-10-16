@@ -1,7 +1,8 @@
 package com;
 
 import java.util.Scanner;
-
+import com.Quiz;
+import com.Question;
 public class Login {
 
 	public static void main(String[] args) {
@@ -21,6 +22,8 @@ public class Login {
 
 	    if(username.equals(username) && password.equals(password)) 
 	        System.out.println("You are logged in");
+	     Quiz q= new Quiz();
+		 q.start();
 
 
 
