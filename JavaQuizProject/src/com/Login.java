@@ -9,12 +9,13 @@ public class Login {
 	    Scanner input = new Scanner(System.in);
 
 	    String username;
+	    
 	    String password;
-
+	    
 	    System.out.println("Log in:");
+	   
 	    System.out.println("username: ");
 	    username = input.next();
-
 	    System.out.println("password: ");
 	    password = input.next();
 
@@ -24,9 +25,8 @@ public class Login {
 	        System.out.println("You are logged in");
 	     Quiz q= new Quiz();
 		 q.start();
-
-
-
+		 q.close();
 	}
+	
 
 	}
