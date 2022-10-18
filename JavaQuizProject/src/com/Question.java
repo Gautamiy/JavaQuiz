@@ -11,7 +11,6 @@ public class Question {
 		for(int i=0;i<choices.length;i++) {
 			this.choices.add(choices[i]);
 		}
-		Collections.shuffle(this.choices);
 		this.ans=ans;
 	}
 	public String getQuestion(){

@@ -91,8 +91,31 @@ public class Quiz {
 		}
 	   sc.close();
 	   System.out.println("your score "+numCorrect);
-   }
+   if(numCorrect>=8 && numCorrect<=10)
+	{
+		System.out.println("Class A");
+		
+	}
+	else if(numCorrect>=6 && numCorrect<8) {
+		System.out.println(" Class B ");
+	}
+	else if(numCorrect == 5)
+	{
+		System.out.println(" Class C ");
+	}
+	else
+	{
+		System.out.println("FAIL");
+	}
+	
+}
    public void close() {
 	   System.out.println("Log Out");
    }
+   public void StudentName(Object username) {
+	   ArrayList al = new ArrayList<String>();
+	     al.add(username);
+		
+   }
+   
 }
